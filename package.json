@@ -3,7 +3,7 @@
   "version": "0.1.0-beta",
   "private": true,
   "scripts": {
-    "build": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo generate",
+    "build": "bash -c 'git clone https://github.com/theme-next/hexo-theme-next ./themes/next||git -C themes/next pull'&&hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
