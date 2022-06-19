@@ -1,6 +1,6 @@
 ---
 layout: title
-title: firstpost
+title: Me when the first post
 date: 2022-06-19 21:13:58
 tags: kool
 ---
