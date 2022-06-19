@@ -4,16 +4,16 @@
 
 # Site
 title: Apparently, I exist!
-subtitle: 'A blog on my life'
-description: 'A blog on my life'
+subtitle: 'Just a devblog'
+description: 'Just a devblog'
 keywords: 
 author: TheBeeBoi
 language: en
-timezone: 'UTC'
+timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://apparently-i-exist.netlify.app/
+url: 'https://apparently-i-exist.netlify.app/'
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
