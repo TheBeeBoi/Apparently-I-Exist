@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "build": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "clean": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo clean",
+    "deploy": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo deploy",
+    "server": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo server"
   },
   "hexo": {
     "version": ""
