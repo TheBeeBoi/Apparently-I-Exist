@@ -1,12 +1,12 @@
 {
   "name": "apparently-i-exist",
-  "version": "0.0.1-alpha",
+  "version": "0.1.0-beta",
   "private": true,
   "scripts": {
     "build": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo generate",
-    "clean": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo clean",
-    "deploy": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo deploy",
-    "server": "git clone https://github.com/theme-next/hexo-theme-next ./themes/next&&hexo server"
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
   "hexo": {
     "version": "6.2.0"
@@ -33,9 +33,7 @@
   "keywords": [
     "Blog",
     "Hexo",
-    "e",
-    "g",
-    "g"
+    "e g g"
   ],
   "author": "TheBeeBoi",
   "license": "MIT",
