@@ -12,7 +12,8 @@ So, I made a new shell script
 hexo new title $1 && \ # Make empty markdown file
 marktext source/_posts/$1.md && \ # Open in markdown editor
 hexo generate && \ # build
-git add . && \ # commit
+git add . && \ # stage
+git commit Added $1 && \ #  commit
 git push # push
 ```
 
