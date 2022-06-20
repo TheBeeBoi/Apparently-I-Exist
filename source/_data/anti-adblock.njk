@@ -3,25 +3,67 @@
         <div class="icon"></div>
         <h2>Adblock Detected</h2>
         <p>I noticed that you're using an adblocker.</p>
-        <br>
+        <br/>
         <p>For my blog, I use webpushr, which is a free push notification service which doesn't sell your data, but some
             adblockers don't allow it.</p>
-        <br>
+        <br/>
         <p>If you don't want push notifications, then that's ok! I respect your choice</p>
-        <br>
+        <br/>
         <p>But if you do, then  please whitelist this site</p>
-        <button class="cancel" onclick="hideMessage()">Cancel</button>
+        <button class="cancel" onclick="hideMessage(true)">Cancel</button>
         <button class="whitelist" onclick="hideMessageReload()">Ok</button>
     </div>
 </div>
 <script>
-    function hideMessage() {
+    function getCookie() {
+        const name = "egg"
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') 
+                c = c.substring(1, c.length);
+            
+            if (c.indexOf(nameEQ) == 0) 
+                return c.substring(nameEQ.length, c.length);
+            
+        }
+        return null;
+    }
+    function setCookie() {
+        const name = "egg"
+        const value = "yeye"
+        const days = 30
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (
+            value || ""
+        ) + expires + "; path=/";
+    }
+    window.onload = () => {
+        getCookie(false)
+            ? hideMessage(false)
+            : console.log('e g g')
+    }
+    function hideMessage(modCookie) {
         warningMessage.style.display = 'none';
-        document.getElementsByClassName("adblock-container")[0].style.display="none"
+        document
+            .getElementsByClassName("adblock-container")[0]
+            .style
+            .display = "none"
+        modCookie ? setCookie("egg", "true", "30") : console.log("e g g   p a r t   2")
     }
     function hideMessageReload() {
         warningMessage.style.display = 'none';
-        document.getElementsByClassName("adblock-container")[0].style.display="none"
+        document
+            .getElementsByClassName("adblock-container")[0]
+            .style
+            .display = "none"
+        setCookie()
         window.location.reload(true)
     }
 </script>
