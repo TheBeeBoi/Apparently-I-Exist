@@ -5,7 +5,7 @@ date: 2022-06-20 21:40:43
 # About me
 ## I'm TheBeeBoi
 A developer who loves the MEAN, MERN, and MEN<sup>(lol)</sup> stacks
-### Likes
+## Likes
 * Node.js
 * Ice cream
 * Huge servers
