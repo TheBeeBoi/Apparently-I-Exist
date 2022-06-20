@@ -42,7 +42,7 @@
         }
         document.cookie = name + "=" + (
             value || ""
-        ) + expires + "; path=/";
+        ) + expires + "; path=/;SameSite=Strict";
     }
     window.onload = () => {
             getCookie(false)
