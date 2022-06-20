@@ -44,9 +44,7 @@
             value || ""
         ) + expires + "; path=/;SameSite=Strict";
     }
-    window.onload = () => {
-            getCookie(false)
-                ? (() => {hideMessage(false);console.log('e g g')})() : console.log('asking anti-adblock')
+    getCookie(false) ? (() => {hideMessage(false);console.log('e g g')})() : console.log('asking anti-adblock')
     }
     function hideMessage(modCookie) {
         warningMessage.style.display = 'none';
