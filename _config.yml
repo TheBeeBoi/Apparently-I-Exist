@@ -107,6 +107,6 @@ deploy:
 
 # Notifications
 webPushNotification:
-  webpushrKey: "BBiIJZ9TPdN4NRm8LDZ1np_UB-Nv4dSShaHiXBCGFyCMZjYluA57VTX-LPril6s7ntFeVOAo7r_0wFfkdXdNn2I"
+  webpushrKey: "e5b110dd78c40ee6828c953d45556d06"
   webpushrAuthToken: "53010"
-  trackingCode: "AEGlpbdgvBCWXqXI6PtsUzobY7TLV9gwJU8bzMktrwfrSERg_xnLVbjpCw8x2GmFmi1ZcLTz0ni6OnX5MAwoM88"
+  trackingCode: "BBiIJZ9TPdN4NRm8LDZ1np_UB-Nv4dSShaHiXBCGFyCMZjYluA57VTX-LPril6s7ntFeVOAo7r_0wFfkdXdNn2I"
